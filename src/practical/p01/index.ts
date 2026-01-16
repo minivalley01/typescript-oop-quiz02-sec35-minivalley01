@@ -33,7 +33,7 @@ async function getEdgePosts() {
         console.error("Error fetching posts:", error.message);
         return [];
     }
-}
+}}
 
 
 getEdgePosts().then(result => console.log(result));
