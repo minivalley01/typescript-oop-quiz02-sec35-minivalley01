@@ -27,16 +27,16 @@ async function getEdgePosts() {
             { id: lastPost.id, title: lastPost.title }
         ];
     try {
-    throw new Error("Something went wrong");
+      throw new Error("Something went wrong");
     } catch (error) {
 
         console.error("Error fetching posts:", error.message);
         return [];
     }
-}}
-
-
-getEdgePosts().then(result => console.log(result));
-
 }
 
+
+  getEdgePosts().then(result => console.log(result));
+
+  }
+}
